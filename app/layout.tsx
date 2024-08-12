@@ -8,6 +8,10 @@ import { ClerkProvider } from "@clerk/nextjs";
 // COMPONENTS
 import Header from "@/components/Header";
 
+// TOAST
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const roboto = Roboto({ weight: '400', subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -28,6 +32,7 @@ export default function RootLayout({
                     <main className="container">
                         {children}
                     </main>
+                    <ToastContainer />
                 </body>
             </html>
         </ClerkProvider>
