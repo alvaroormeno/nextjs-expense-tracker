@@ -13,7 +13,7 @@ const HomePage = async () => {
     const user = await currentUser();
 
     return user ? (
-        <main>
+        <main className='page-container'>
             <h2>Welcome, {user.firstName}</h2>
             <Balance/>
             <IncomeExpense/>

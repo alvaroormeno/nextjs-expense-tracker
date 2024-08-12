@@ -26,20 +26,20 @@ const AddTransaction = () => {
         <>
             <h3>Add Transaction</h3>
 
-            <form action={clientAction} ref={formRef}>
+            <form action={clientAction} ref={formRef} className='form-container'>
                 <div className='form-control'>
 
-                    <label htmlFor="text">Text</label>
+                    <label htmlFor="text">Transaction Name</label>
 
-                    <input type="text" id='text' name='text' placeholder='Enter Text...' />
+                    <input type="text" id='text' name='text' placeholder='Enter Name...' />
 
                 </div>
 
                 <div className='form-control'>
 
-                    <label htmlFor="amount">Amount <br/> (negative - expense, positive - income)</label>
+                    <label htmlFor="amount">Amount</label>
 
-                    <input type="number" id='amount' name='amount' placeholder='Enter Amount...' step='0.01' />
+                    <input type="number" id='amount' name='amount' placeholder='Example: 5.50 or -5.50' step='0.01' />
 
                 </div>
                 
